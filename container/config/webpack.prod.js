@@ -9,6 +9,7 @@ const productionConfig = {
   mode: "production",
   output: {
     filename: "[name].[contenthash].js", //templete for ouput file like marketingBundle.contenthash.js for caching
+    publicPath: "/conatiner/latest/",
   },
   plugins: [
     new ModuleFederationPlugin({
