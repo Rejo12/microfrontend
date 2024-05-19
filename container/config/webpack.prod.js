@@ -15,7 +15,7 @@ const productionConfig = {
     new ModuleFederationPlugin({
       name: "container",
       remotes: {
-        marketing: `marketing@${domain}/marketing/remoteEntry.js`, //assuming that https://ifoodfacts.dev.net/marketing exists, similar will be for dashboard and other remotes
+        marketing: `marketing@${domain}/marketing/latest/remoteEntry.js`, //assuming that https://ifoodfacts.dev.net/marketing exists, similar will be for dashboard and other remotes
       },
       shared: packageJson.dependencies,
     }),
