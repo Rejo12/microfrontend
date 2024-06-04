@@ -16,6 +16,8 @@ const productionConfig = {
       name: "container",
       remotes: {
         marketing: `marketing@${domain}/marketing/latest/remoteEntry.js`, //assuming that https://ifoodfacts.dev.net/marketing exists, similar will be for dashboard and other remotes
+        auth: `auth@${domain}/auth/latest/remoteEntry.js`,
+        dashboard: `auth@${domain}/dashboard/latest/remoteEntry.js`,
       },
       shared: packageJson.dependencies,
     }),
